@@ -1,0 +1,46 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx tsc && jasmine",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "prettier": "npx prettier --config .prettierrc.json \"src/**/*.ts\" --write",
+    "jasmine": "jasmine",
+    "start": "nodemon --exec npx ts-node ./src/index.ts",
+    "build": "npx tsc",
+    "start:prod": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.3.0",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.7.13",
+    "@types/sharp": "^0.30.5",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jasmine": "^4.3.0",
+    "jasmine-core": "^4.3.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "sharp": "^0.30.7",
+    "supertest": "^6.2.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
